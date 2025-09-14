@@ -18,7 +18,10 @@ For each topic (e.g SQLi) there is a dedicated folder that contains:
 - **Concept explanations** (how each attack works)
 - **Automation Scripts** (for each lab)
 
-
 ---
 
+## Status
+✅ SQL Injection: Notes and scripts completed  
+🚧 OS Command Injection: in progress  
+⏳ XSS, Authentication, Access Control: planned  
 
