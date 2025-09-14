@@ -23,8 +23,17 @@ def exploit_sqli(url):
     return counter
     
 
+def main():
+    if len(sys.argv) != 2:
+        print("(+) Usage: %s <url>" % sys.argv[0])
+        print("(+) Example %s www.example.com" % sys.argv[0])
+        sys.exit(-1)
 
-if __name__ == '__main__':
     url = sys.argv[1]
     numCols = exploit_sqli(url)
-    print(numCols)
+    print(f'(+) Number of returned columns: {numCols}')
+    
+    
+
+if __name__ == "__main__":
+    main()

