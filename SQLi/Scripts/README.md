@@ -23,7 +23,7 @@ Most scripts are written in Python 3.
 
 Example usage:
 ```bash
-python3 sqli-lab-01.py http://target.lab/login username
+python3 sqli-lab-01.py http://target.lab/login
 ```
 
 ## 🔍 BurpSuite Proxy (Optional)
