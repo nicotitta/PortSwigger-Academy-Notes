@@ -7,7 +7,7 @@ Each `.md` file summarizes:
 - **Techniques** and common payloads.
 
 ## Current Notes
-- `Intro.md` → Introduction to SQLi concepts.
-- `Blind.md` → Blind SQL injection techniques.
-- `Examine-DB.md` → Enumerating and extracting database information.
-- `Union.md` → Union-based injection techniques.
+- [Intro.md](Intro.md) → Introduction to SQLi concepts.
+- [Blind.md](Blind.md) → Blind SQL injection techniques.
+- [Examine-DB.md](Examine-DB.md) → Enumerating and extracting database information.
+- [Union.md](Union.md) → Union-based injection techniques.

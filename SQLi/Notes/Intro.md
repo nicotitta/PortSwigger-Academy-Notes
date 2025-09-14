@@ -55,7 +55,7 @@ this way we force the condition to evaluate always to true.
 
 ## Union-based SQLi
 Union-based SQL injections are a special type of SQLi, they levarage the **UNION** clause to append results from another query to the original.
-For more details see ...
+For more details see the dedicated notes on [Union-based SQLi](Union.md).
 
 ## Blind SQLi
 Occurs when the application does not display query results or error messages.
@@ -63,7 +63,7 @@ Such types of SQLi can be performed using:
 * Boolean conditions
 * Time delays
 * Out-of-band (**OAST**) interactions (e.g **DNS Lookup**)
-For more deteails refer to ...
+For more deteails refer to the [Blind SQLi](Blind.md) note.
 
 ## Second order SQLi
 In this type of SQLi the user input is not executed but it is stored in the the database for future user.
