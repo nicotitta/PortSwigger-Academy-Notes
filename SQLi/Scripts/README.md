@@ -2,7 +2,7 @@
 
 This folder contains automation scripts developed while solving the **SQL Injection labs** from the [PortSwigger Web Security Academy](https://portswigger.net/web-security).
 
-Each script corresponds to one or more labs and demonstrates how to:
+Each script corresponds to one lab and demonstrates how to:
 - Automate common injection tasks.
 - Extract data (boolean-based, union-based, blind).
 - Save time compared to manual exploitation in Burp Suite.
@@ -14,7 +14,7 @@ They must **not** be used on real systems without explicit authorization.
 ---
 
 ## Script Naming Convention
-Scripts are named according to the la
+Scripts are named according to the corresponding lab
 
 ---
 
