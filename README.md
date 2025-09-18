@@ -22,6 +22,6 @@ For each topic (e.g SQLi) there is a dedicated folder that contains:
 
 ## Status
 ✅ SQL Injection: Notes and scripts completed  
-🚧 OS Command Injection: in progress  
-⏳ XSS, Authentication, Access Control: planned  
+✅  OS Command Injection completed
+⏳ XSS, Authentication, Access Control: in progress  
 
